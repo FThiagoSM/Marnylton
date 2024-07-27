@@ -316,6 +316,7 @@ footer {
     #sobre{
         height: 58rem;
         font-size: 0.9rem;
+        padding-bottom: 2rem;
         padding-top:  2rem;
     }
     #sobre_texto{
