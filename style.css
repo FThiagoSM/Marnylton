@@ -314,13 +314,14 @@ footer {
         display: none;
     }
     #sobre{
-        height: 58rem;
+        height: 50rem;
+        width: 40rem;
+        margin-top:7.5rem;
         font-size: 0.9rem;
-        padding-bottom: 2rem;
         padding-top:  2rem;
     }
     #sobre_texto{
-        padding: 0rem 13rem 0rem 13rem;
+        padding: 0rem 2rem 0rem 2rem;
     }
 
     #perfil{
@@ -341,5 +342,8 @@ footer {
     }
     #livro_texto-RPNSAS{
         padding: 0rem 2rem 0rem 2rem;
+    }
+    footer{
+        width: 45rem;
     }
 }
