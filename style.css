@@ -1,0 +1,344 @@
+
+body {
+    background-image: linear-gradient(180deg, rgb(245, 235, 220), beige);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    margin-bottom: 120rem;
+    color: white;
+}
+
+header {
+    position: absolute;
+    background-color: #556B2F;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2rem;
+}
+
+header h1 {
+    z-index: 2;
+    cursor: default;
+    font-size: 1.76rem;
+}
+
+#main-links {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #556B2F;
+    background-size: cover;
+    padding: 0.2rem;
+    top: 0.1rem;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+    z-index: -1;
+    border-bottom: #81473c solid 0.4rem;
+}
+
+#menubtn {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: 1rem;
+    top: 0rem;
+    font-size: 2rem;
+}
+
+#main-links a {
+    font-size: 1.45rem;
+    color: beige;
+    display: flex;
+    padding: 0rem 10rem 0rem 10rem;
+}
+
+#main-links.open {
+    top: 2rem;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+main {
+    width: 100%;
+    margin-top: 3rem;
+    color: rgb(189, 174, 141);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    background-color: rgb(34, 44, 34);
+    text-align: justify;
+    align-items: center;
+    padding: 5rem 2rem 2rem 2rem;
+    height: 70rem;
+    z-index: -2;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    position: absolute;
+}
+
+#livro_sect {
+    margin: 0.1rem 0 1.25rem 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: -3;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    border-top: #D94343 solid 0.45rem;
+    border-bottom: #D94343 solid 0.45rem;
+    box-shadow: 0rem 0rem 2.25rem #D94343 inset;
+    margin-bottom: 5rem;
+    letter-spacing: 2rem;
+}
+
+#livro_sect h2 {
+    color: #F2A516;
+    justify-self: center;
+    align-self: center;
+}
+
+#livro-AMDM {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #F2EAD0;
+    background-color: #A63232;
+    border-bottom: 0.4rem #880f34 solid;
+    text-align: justify;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0rem 0rem 3rem 0rem;
+    text-align: justify;
+    z-index: -3;
+    overflow: hidden;
+    margin-top: 75rem;
+    position: absolute;
+}
+#livro-RPNSAS {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(63.5deg, black, rgb(70, 17, 17), #3b2613, rgb(49, 2, 2));
+    border-top: 0.4rem #0D0D0D solid;
+    border-bottom: 0.4rem #0D0D0D solid;
+    text-align: justify;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0rem 0rem 3rem 0rem;
+    text-align: justify;
+    z-index: -3;
+    overflow: hidden;
+    margin-top: 136rem;
+    position: absolute;
+}
+
+
+#perfil {
+    width: 35.5rem;
+    border-radius: 50%;
+    border: solid 0.1rem rgb(84, 173, 49);
+    cursor: pointer;
+    transition: all 0.24s;
+}
+#perfil:hover{
+    width: 36.5rem;
+    border: solid 0.35rem rgb(84, 173, 49);
+    transition: all 0.24s;
+    filter: saturate(1.25);
+}
+
+#livro_photo-AMDM {
+    width: 22.5rem;
+    border: solid 0.3rem #F2B5A7;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#livro_photo-AMDM:hover{
+    width: 23.5rem;
+    transition: all 0.2s;
+    filter: saturate(1.2);
+    box-shadow: 0rem 0rem 0.4rem #F2B5A7;
+}
+#livro_photo-RPNSAS {
+    width: 22.5rem;
+    margin-top: 5rem;
+    border: solid 0.3rem #7a610f;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#livro_photo-RPNSAS:hover{
+    width: 23.5rem;
+    transition: all 0.2s;
+    filter: saturate(1.1);
+    box-shadow: 0rem 0rem 0.3rem rgba(235, 188, 78, 0.719);
+}
+
+#livro_info-AMDM {
+    font-size: 1.1rem;
+}
+
+#livro_info-AMDM span {
+    letter-spacing: 0.1rem;
+    color:#f55a74;
+}
+#livro_info-AMDM .dark{
+    letter-spacing: 0.1rem;
+    color: #F2B5A7;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#livro_info-RPNSAS {
+    color: #F2F2F2;
+    font-size: 1.1rem;
+}
+
+#livro_info-RPNSAS span {
+    letter-spacing: 0.1rem;
+    color: gold;
+}
+#livro_info-RPNSAS .dark{
+    letter-spacing: 0.1rem;
+    color: rgb(87, 82, 77);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#sobre_texto {
+    margin: 2rem 1rem 0rem 1rem;
+}
+
+#livro_texto-AMDM {
+    text-align: justify;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 1.3rem;
+    color: #ff95a7;
+    max-width: 70rem;
+}
+
+.sobreLivro-AMDM {
+    border-left: #F2B5A7 0.2rem solid;
+    margin: 2rem 0rem 0rem 1rem;
+    text-align: justify;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: #F2B5A7;
+    padding-left: 1rem;
+}
+#livro_texto-RPNSAS {
+    text-align: justify;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 1.3rem;
+    color: beige;
+}
+
+.sobreLivro-RPNSAS {
+    border-left: #ff5900 0.2rem solid;
+    margin: 2rem 0rem 0rem 1rem;
+    text-align: justify;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: rgb(255, 157, 0);
+    padding-left: 1rem;
+}
+
+footer {
+    font-family: "Nova Mono", monospace;
+    font-weight: auto;
+    font-style: normal;
+    margin-top: 10rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 1.3;
+    cursor: default;
+}
+
+#devName {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+#devName span {
+    font-size: 1rem;
+    color: gold;
+}
+
+#Devlinks {
+    margin-right: 1.4rem;
+}
+
+#Devlinks a {
+    font-size: 2rem;
+}
+@media screen and (max-width: 1320px){
+    body{
+        margin-bottom: 212rem;
+    }
+    #headerID{
+        display: flex;
+        border-bottom: #880f34 0.33rem solid;
+        padding: 1.5rem 0rem 1.5rem 0rem;
+    }
+    #menubtn{
+        display: none;
+    }
+    #main-links{
+        display: none;
+    }
+    #sobre{
+        height: 50rem;
+        font-size: 0.9rem;
+        padding-top:  2rem;
+    }
+    #sobre_texto{
+        padding: 0rem 13rem 0rem 13rem;
+    }
+
+    #perfil{
+        width: 17.5rem;
+        font-size: 2rem;
+    }
+    #perfil:hover{
+        width: 18.5rem;
+    }
+    #livro-AMDM{
+        height: 70rem;
+    }
+    #livro-RPNSAS{
+        margin-top: 150rem;
+    }
+    #livro_texto-AMDM{
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    #livro_texto-RPNSAS{
+        padding: 0rem 2rem 0rem 2rem;
+    }
+}
